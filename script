@@ -1,0 +1,30 @@
+// --- SELEÇÃO DE ELEMENTOS DO DOM ---
+const botaoTema = document.getElementById('botao-tema');
+const botaoEnviar = document.getElementById('botao-enviar');
+const campoNome = document.getElementById('nome-usuario');
+const divMensagem = document.getElementById('mensagem-boas-vindas');
+const textoBoasVindas = document.getElementById('texto-boas-vindas');
+
+// --- FUNÇÃO 1: ALTERAR TEMA (MODO ESCURO / CLARO) ---
+// Esta função adiciona ou remove uma classe no body, alterando visualmente o site de forma fluida.
+botaoTema.addEventListener('click', function() {
+    document.body.classList.toggle('modo-escuro');
+});
+
+// --- FUNÇÃO 2: PROCESSAR FORMULÁRIO E MANIPULAR DOM ---
+// Esta função armazena o nome do usuário em uma variável, valida e atualiza a tela dinamicamente.
+botaoEnviar.addEventListener('click', function() {
+    // Armazenando o valor digitado na variável (Critério de complexidade)
+    const nomeInjetado = campoNome.value.trim();
+
+    // Verificação simples se o campo não está vazio
+    if (nomeInjetado !== "") {
+        // Altera o texto do elemento HTML interno
+        textoBoasVindas.innerHTML = `Olá, <strong>${nomeInjetado}</strong>! Obrigado por apoiar o Agro Sustentável. Juntos fazemos o futuro!`;
+        
+        // Remove a classe que escondia a div, mostrando-a na tela
+        divMensagem.classList.remove('escondido');
+    } else {
+        alert("Por favor, digite seu nome antes de enviar!");
+    }
+});
