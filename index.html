@@ -2,59 +2,60 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=divice-width, initial-scale=1.0">
-    <title>Agrinho 2026 - Sustentabilidade</title>
-    <link rel="stylesheet" hret="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TV Influenciando na Agronomia</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+     <button id="modoEscuro">modo escuro</button>
+    
+     <div class="container">
+        
+        <div class="dados">
+    <h3>coloque seus dados</h3>
 
-    <header>
-        <h1>Agro Forte, Futuro Sustentavel</h1>
-        <h2>Equilibrio entre produção e meio ambiente</h2>
+    <input type="text" id="nome" placeholder="Digite seu nome">
 
-        <button id="botao-tema">Alternar Modo Escuro</button>
-    </header>
+    <input type="number" id="idade" placeholder="Digite sua idade">
 
-    <main>
-        <selection class="conteudo-pricipal">
-            <h3>O comproisso do campo</h3>
-            <p>O <dfn>Agronegocio Sustentavel</dfn> é a chave para o nosso futuro. É possivel produzir alimentos em larga escala respeitando os recursos naturais.</p>
+    <button onclick="mostrarDados()">Enviar</button>
 
-            <blockquote>
-                <q>A terra não é uma herança de nossos pais, mas um empréstimo de nossos filhos.</q>
-                <cite>- Provérbio Ambiental</cite>
-            </blockquote>
+    <p id="resultado"></p>
+    </div>
+        
+        
+        <h1>TV Influenciando na Agronomia</h1>
+        <p>Este site explora como a televisão e a mídia influenciam a percepção da agronomia e do setor agrícola, destacando a importância da tecnologia e dos profissionais na área.</p>
+    <h1>Como a TV Influencia na Agronomia</h1>
+    
+    <h2>O que é agronomia</h2>
+    <p>A agronomia é a ciência que estuda a produção de alimentos, principalmente as culturas agrícolas. Ela engloba o estudo do solo, da água, do clima e das práticas de cultivo para otimizar a produção agrícola.</p>
+    <h2>Como a mídia influencia nossa percepção do campo</h2>
+    <p>A mídia tem um papel importante na forma como percebemos o setor agrícola. Através de programas de televisão, filmes e documentários, a sociedade pode ter uma visão distorcida ou idealizada da vida no campo, o que pode influenciar diretamente a forma como os produtores rurais são vistos e como as práticas agrícolas são percebidas pelo público em geral.</p>
+    
 
-            <hr/> <h3>Nossos Pilares</h3>
-            <ul>
-                <li>strong>preservação:</strong> Uso correto da água e conservação do solo,</li>
-                <li><strong>Tecnologia:</strong> Monitoramento inteligente de lavouras.</li>
-                <li><strong>Consciência:</strong> Educação ambiental desde as escolas.</li>
-            </ul>
-        </section>
+     <h1>Desenhos</h1>
+     <p>Os desenhos e programas de TV podem influenciar a forma como a sociedade percebe o setor agrícola, muitas vezes apresentando uma visão idealizada ou distorcida da vida no campo.</p>
+     <h3>Exemplos</h3>
+        <ul>
+           <li>Shaun o Carneiro: mostra a vida em uma fazenda de maneira divertida, despertando a curiosidade de crianças e adultos sobre o meio rural. Mesmo sem ensinar Agronomia diretamente, a série aproxima o público do campo.</li>
+           <li>Chico Bento: retrata a vida em uma fazenda de forma humorística, mostrando as dificuldades e a rotina dos produtores rurais.</li>
+           <li>O Menino Maluquinho: embora não seja focado em agronomia, o personagem vive em um ambiente rural e pode despertar o interesse das crianças pelo campo.</li>
+        </ul>
+     
+     <h1>Tecnologia na Agronomia</h1>
+     <p>A tecnologia tem desempenhado um papel cada vez mais importante na agricultura, com inovações que ajudam a melhorar a produtividade, a sustentabilidade e a eficiência dos processos de cultivo.</p>
+     <h2>Inovações Tecnológicas</h2>
+        <ul>
+            <li>Drones: utilizados para monitorar plantações, identificar pragas e doenças, e otimizar o uso de insumos agrícolas.</li>
+            <li>Sensores de Solo: ajudam a medir a umidade, a temperatura e os nutrientes do solo, permitindo uma gestão mais precisa das culturas.</li>
+            <li>Software de Gestão Agrícola: ferramentas digitais que auxiliam os produtores na tomada de decisões, planejamento e análise de dados.</li>
+        </ul>
+    <h1>Profissionais na Agronomia</h1>
+    <p>Os profissionais da agronomia desempenham um papel fundamental na produção de alimentos, desenvolvendo técnicas e soluções para melhorar a eficiência e a sustentabilidade da agricultura.</p>
+    </div>
 
-        <section class="secao-interativa">
-            <h3>Participe da Nossa Comunidade</h3>
-            <p>Insira seu nome abaixo para receber um guia digital personalizado sobre práticas sustentáveis.</p>
-            
-            <form id="formulario-usuario" onsubmit="event.preventDefault();">
-                <label for="nome-usuario">Seu Nome:</label>
-                <input type="text" id="nome-usuario" placeholder="Digite seu nome aqui" required>
-                
-                <button type="button" id="botao-enviar">Gerar Boas-Vindas</button>
-            </form>
+<script src="script.js"></script>
 
-            <div id="mensagem-boas-vindas" class="escondido">
-                <span id="texto-boas-vindas"></span>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>Desenvolvido para o Concurso Agrinho 2026</p>
-        <p>#agrinho2026</p>
-    </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
